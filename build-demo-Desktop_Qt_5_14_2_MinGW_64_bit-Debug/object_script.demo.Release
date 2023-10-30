@@ -1,0 +1,15 @@
+release/dialog.o
+release/dialogexample.o
+release/dockwindow.o
+release/form.o
+release/main.o
+release/mainwindow.o
+release/splitterwindow.o
+release/stackdlg.o
+release/moc_dialog.o
+release/moc_dialogexample.o
+release/moc_dockwindow.o
+release/moc_form.o
+release/moc_mainwindow.o
+release/moc_splitterwindow.o
+release/moc_stackdlg.o

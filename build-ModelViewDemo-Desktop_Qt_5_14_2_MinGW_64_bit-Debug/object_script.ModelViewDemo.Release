@@ -1,0 +1,11 @@
+release/combodelegate.o
+release/datedelegate.o
+release/histogramview.o
+release/main.o
+release/mainwindow.o
+release/modelex.o
+release/moc_combodelegate.o
+release/moc_datedelegate.o
+release/moc_histogramview.o
+release/moc_mainwindow.o
+release/moc_modelex.o

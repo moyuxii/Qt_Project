@@ -1,0 +1,15 @@
+debug/dialog.o
+debug/dialogexample.o
+debug/dockwindow.o
+debug/form.o
+debug/main.o
+debug/mainwindow.o
+debug/splitterwindow.o
+debug/stackdlg.o
+debug/moc_dialog.o
+debug/moc_dialogexample.o
+debug/moc_dockwindow.o
+debug/moc_form.o
+debug/moc_mainwindow.o
+debug/moc_splitterwindow.o
+debug/moc_stackdlg.o

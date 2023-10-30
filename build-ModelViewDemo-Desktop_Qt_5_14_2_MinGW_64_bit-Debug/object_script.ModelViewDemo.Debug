@@ -1,0 +1,11 @@
+debug/combodelegate.o
+debug/datedelegate.o
+debug/histogramview.o
+debug/main.o
+debug/mainwindow.o
+debug/modelex.o
+debug/moc_combodelegate.o
+debug/moc_datedelegate.o
+debug/moc_histogramview.o
+debug/moc_mainwindow.o
+debug/moc_modelex.o
