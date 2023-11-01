@@ -124,11 +124,12 @@ void HistogramView::setSelection(const QRect &rect,QItemSelectionModel:: Selecti
         for(int column=1; column<columns; ++column){
             QModelIndex index=model () ->index (row, column, rootIndex ());
             QRegion region=itemRegion (index); // (c)
+            //判断鼠标点击范围与哪个条形有交集
             if (!region.intersected(rect).isEmpty())
             selectedindex =index;
         }
     }
-    if (selectedindex. isValid ())
+    if (selectedindex.isValid ())
     selections->select(selectedindex,flags);
     else
     {
