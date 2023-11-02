@@ -1,6 +1,8 @@
 #include "dialog.h"
 #include <QHBoxLayout>
 #include <QVBoxLayout>
+#include "timeserver.h"
+#include <QMessageBox>
 Dialog::Dialog(QWidget *parent):QDialog(parent)
 {
     setWindowTitle("多线程时间服务器");
@@ -15,10 +17,25 @@ Dialog::Dialog(QWidget *parent):QDialog(parent)
     mainLayout->addWidget(label1);
     mainLayout->addWidget(label2);
     mainLayout->addLayout(BtnLayout);
-    connect(quitBtn,SIGNAL(click()),this,SLOT(close()));
+    connect(quitBtn,SIGNAL(clicked()),this,SLOT(close()));
+
+    count =0;
+    timeServer = new TimeServer(this);
+    if(!timeServer->listen()){
+        QMessageBox::critical(this,tr("多线程时间服务器"),
+                tr("无法启动服务器: %1.").arg(timeServer->errorString()));
+        close();
+        return;
+    }
+    label1->setText(tr("服务器端口： %1.").arg(timeServer->serverPort()));
 }
 
 Dialog::~Dialog()
 {
 
+}
+
+void Dialog::slotShow()
+{
+    label2->setText(tr("第%1次请求完毕.").arg(++count));
 }

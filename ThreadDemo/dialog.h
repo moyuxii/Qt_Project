@@ -4,16 +4,21 @@
 #include <QDialog>
 #include <QLabel>
 #include <QPushButton>
+#include "timeserver.h"
 class Dialog:public QDialog
 {
     Q_OBJECT
 public:
     Dialog(QWidget *parent=nullptr);
     ~Dialog();
+public slots:
+    void slotShow();
 private:
     QLabel *label1;
     QLabel *label2;
     QPushButton *quitBtn;
+    TimeServer *timeServer;
+    int count;
 
 };
 

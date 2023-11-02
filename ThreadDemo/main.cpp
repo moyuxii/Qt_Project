@@ -7,6 +7,8 @@
 #include <QWaitCondition>
 #include <QMutex>
 #include <QtDebug>
+#include "timeserver.h"
+#include "timeclient.h"
 const int DataSize=1000;
 const int BufferSize=80;
 int buffer[BufferSize];
@@ -89,8 +91,11 @@ void Consumer::run()
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    QDialog w;
+    Dialog w;
+    TimeClient c;
+
     w.show();
+     c.show();
 //    Producer producer;
 //    Consumer consumer;
 //    Consumer consumer2;

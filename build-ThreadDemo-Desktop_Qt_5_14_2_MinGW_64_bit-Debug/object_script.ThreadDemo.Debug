@@ -1,0 +1,13 @@
+debug/dialog.o
+debug/main.o
+debug/threaddlg.o
+debug/timeclient.o
+debug/timeserver.o
+debug/timethread.o
+debug/workthread.o
+debug/moc_dialog.o
+debug/moc_threaddlg.o
+debug/moc_timeclient.o
+debug/moc_timeserver.o
+debug/moc_timethread.o
+debug/moc_workthread.o

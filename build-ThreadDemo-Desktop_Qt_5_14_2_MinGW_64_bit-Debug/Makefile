@@ -275,6 +275,7 @@ Makefile: ../ThreadDemo/ThreadDemo.pro ../../Qt/Qt5.14.2/5.14.2/mingw73_64/mkspe
 		../ThreadDemo/ThreadDemo.pro \
 		../../Qt/Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Widgets.prl \
 		../../Qt/Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Gui.prl \
+		../../Qt/Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Network.prl \
 		../../Qt/Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Core.prl \
 		../../Qt/Qt5.14.2/5.14.2/mingw73_64/lib/qtmain.prl \
 		../../Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/features/build_pass.prf
@@ -484,6 +485,7 @@ Makefile: ../ThreadDemo/ThreadDemo.pro ../../Qt/Qt5.14.2/5.14.2/mingw73_64/mkspe
 ../ThreadDemo/ThreadDemo.pro:
 ../../Qt/Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Widgets.prl:
 ../../Qt/Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Gui.prl:
+../../Qt/Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Network.prl:
 ../../Qt/Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Core.prl:
 ../../Qt/Qt5.14.2/5.14.2/mingw73_64/lib/qtmain.prl:
 ../../Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/features/build_pass.prf:

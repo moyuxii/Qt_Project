@@ -1,0 +1,13 @@
+release/dialog.o
+release/main.o
+release/threaddlg.o
+release/timeclient.o
+release/timeserver.o
+release/timethread.o
+release/workthread.o
+release/moc_dialog.o
+release/moc_threaddlg.o
+release/moc_timeclient.o
+release/moc_timeserver.o
+release/moc_timethread.o
+release/moc_workthread.o
