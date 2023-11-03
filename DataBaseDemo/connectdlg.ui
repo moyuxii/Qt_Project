@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QSqlConnectionDialogUi</class>
+ <widget class="QDialog" name="QSqlConnectionDialogUi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>350</width>
+    <height>251</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="connCroupBox">
+     <property name="title">
+      <string>数据库连接设置</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="textLabel2">
+        <property name="text">
+         <string>驱动:</string>
+        </property>
+        <property name="buddy">
+         <cstring>comboDriver</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="comboDriver">
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="textLabel3">
+        <property name="text">
+         <string>数据库名:</string>
+        </property>
+        <property name="buddy">
+         <cstring>editDatabase</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="editDatabase"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="textLabel4">
+        <property name="text">
+         <string>用户名:</string>
+        </property>
+        <property name="buddy">
+         <cstring>editUsemame</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="editUsemame"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="textLabel4_2">
+        <property name="text">
+         <string>密码:</string>
+        </property>
+        <property name="buddy">
+         <cstring>editPassword</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="editPassword"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="textLabel5">
+        <property name="text">
+         <string>主机名:</string>
+        </property>
+        <property name="buddy">
+         <cstring>editHostname</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="editHostname"/>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="textLabel5_2">
+        <property name="text">
+         <string>端口:</string>
+        </property>
+        <property name="buddy">
+         <cstring>portSpinBox</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QSpinBox" name="portSpinBox"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="status_label">
+     <property name="frameShape">
+      <enum>QFrame::Panel</enum>
+     </property>
+     <property name="text">
+      <string>状态</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>168</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="okButton">
+       <property name="text">
+        <string>连接</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelButton">
+       <property name="text">
+        <string>退出</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
