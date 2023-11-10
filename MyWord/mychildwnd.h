@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QTextEdit>
+
 class MyChildWnd : public QTextEdit
 {
     Q_OBJECT

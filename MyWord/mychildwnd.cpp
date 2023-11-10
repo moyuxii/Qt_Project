@@ -6,6 +6,7 @@
 #include <QMessageBox>
 #include <QCloseEvent>
 #include <QDebug>
+
 MyChildWnd::MyChildWnd()
 {
     setAttribute(Qt::WA_DeleteOnClose);
@@ -91,8 +92,9 @@ void MyChildWnd::setFormatOnSelectedWord(const QTextCharFormat &fmt)
     if(!tcursor.hasSelection()){
         tcursor.select(QTextCursor::WordUnderCursor);
     }
-    tcursor.mergeCharFormat(fmt);
-    this->mergeCurrentCharFormat(fmt);
+    // 以下a和b操作从游标和文本控件角度对格式进行更新设置，且当有selection时，格式作用于selection部分
+    tcursor.mergeCharFormat(fmt);   //（a）
+    this->mergeCurrentCharFormat(fmt); //(b)
 }
 
 void MyChildWnd::setAlignOfDocumentText(int aligntype)
